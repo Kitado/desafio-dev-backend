@@ -2,7 +2,7 @@
 
 Como sabe a **BLU365** é uma empresa onde nós ajudamos os brasileiros a se manter sempre no azul, facilitando a negociação de suas dívidas sem a abordagem convencional. Aqui ele consegue negociar seus débitos totalmente online, em qualquer momento do seu dia. 
 
-Mas para manter-se no azul, além de quitar suas dívidas, é importante que eles possa manter a organização de suas finanças todos os 365 dias do ano, e como nós da **BLU365** estamos sempre focados nesse objetivo, por que não nos divertir pensando em algo legal. 
+Mas para manter-se no azul, além de quitar suas dívidas, é importante que eles possam manter a organização de suas finanças todos os 365 dias do ano, e como nós da **BLU365** estamos sempre focados nesse objetivo, por que não nos divertir pensando em algo legal. 
 
 Criamos um exercício que tem tudo a ver com a **BLU365**, onde vamos calcular seus ganhos, e assim organizar melhor suas finanças. 
 
@@ -16,7 +16,7 @@ Imaginando uma situação onde um pessoa tenha 30 dias para trabalhar e queira g
 
 #### Parte 1 (Básico)
 
-Calcule quantos dias úteis existe por 30 dias, e retorne o valor que o usuário deva receber
+Calcule quantos dias úteis existem em 30 dias, e retorne o valor que o usuário deva receber
 
 #### Parte 2 (Intermediário)
 
