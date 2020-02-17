@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "date-fns": "^2.9.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "name": "desafio-dev-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Kitado/desafio-dev-backend.git",
+  "author": "codingwithmath <also.kill14@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  }
+}
