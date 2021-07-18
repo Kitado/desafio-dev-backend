@@ -1,0 +1,36 @@
+version: "3.9"
+
+services: 
+
+    Mysql:
+        container_name: Mysql_Blu
+        image: mysql:5.7
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+            TZ: "America/Sao_paulo"
+        restart: always
+        networks:
+            blu365-net:
+                aliases:
+                    - mysql
+        volumes:
+            - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+    
+    Api:
+        container_name: Api
+        build: .
+        image: api_blu365
+        ports:
+            - "5000:5000"
+        environment:
+            TZ: "America/Sao_paulo"
+        networks:
+            blu365-net:
+        depends_on: 
+            - Mysql
+
+networks:
+    blu365-net:
+        name: blu365-net
