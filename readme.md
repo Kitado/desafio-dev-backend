@@ -1,41 +1,16 @@
-## Olá desenvolvedor, tudo bom?
+# Teste técnico
 
-Como sabe a **BLU365** é uma empresa onde nós ajudamos os brasileiros a se manter sempre no azul, facilitando a negociação de suas dívidas sem a abordagem convencional. Aqui ele consegue negociar seus débitos totalmente online, em qualquer momento do seu dia. 
+## Como usar
+Primeiramente, para acessar é necessário estar com o Docker instalado.
 
-Mas para manter-se no azul, além de quitar suas dívidas, é importante que eles possam manter a organização de suas finanças todos os 365 dias do ano, e como nós da **BLU365** estamos sempre focados nesse objetivo, por que não nos divertir pensando em algo legal. 
+Para iniciar a aplicação, a única coisa que se deve fazer é ir até a pasta do projeto através do CMD e executar o comando `docker compose up -d`. Com isso, o Docker criará dois containers, um para o Banco Mysql, e outro para a Api.
 
-Criamos um exercício que tem tudo a ver com a **BLU365**, onde vamos calcular seus ganhos, e assim organizar melhor suas finanças. 
+Para testar a aplicação, recomendo o uso de alguma tecnologia de requisições, como Postman ou Insomnia. O projeto estará rodando em localhost na porta 5000, então acesse através da url `http://localhost:5000/`
+Existem dois endpoint possíveis de serem acessados, sendo eles: `/api/basic` e `/api/advanced`, sendo o primeiro para a parte básica do teste e o segundo para a que envolve banco de dados.
 
-Vamos começar?
+No endpoint `/api/basic` é possível enviar (através do método Get) dois parâmetros, sendo eles: `total_days` e `gain_per_day`. Enviando tudo corretamente, retornará o resultado.
 
-## Teste Backend
-
-**Resumo**:
-
-Imaginando uma situação onde um pessoa tenha 30 dias para trabalhar e queira ganhar 100 reais diarios, mas não receba pelos finais de semana... como saber quanto receberia no final dos 30 dias corridos?
-
-#### Parte 1 (Básico)
-
-Calcule quantos dias úteis existem em 30 dias, e retorne o valor que o usuário deva receber
-
-#### Parte 2 (Intermediário)
-
-Usando o calculo anterior crie uma interface de comunicação ( _na linguagem que se sentir confortável_ ), que recebe os 2 valores( _dias e valor_ ), usando um método HTTP, e retorne o valor a ser recebido
-
-#### Parte 3 (desafiador)
-
-Com a mesma interface deve primeiro, cadastrar uma profissão e seu valor diário, a api deve armazenar esse valor (pode ser em MySQL, MongoDB, ElasticSearch etc), depois você deve efetuar uma pesquisa informando a profissão e quantidade de dias e receber o retorno do valor calculado.
-
-### Dicas
-
-Existem muitas bibliotecas que ajudam na:
-- manipulação de datas
-- criações de API's 
-
-### Diferencial 
-
-- Uso de Docker
-
-Qualquer dúvida, entre em contato conosco.
+No endpoint `/api/advanced` é possível enviar requisições através dos métodos Get e Post. O primeiro método serve para conulta e deve ser enviado com os parâmetros `profissao` e `total_days`, e isso retornará o resultado. O segundo método serve para cadastro deve ser enviado com os parâmetros `profissao` e `valor_diario`, e caso tudo esteja correto, será salvo no banco de dados.
 
 
+Qualquer dúvida ou problema, por favor, entre em contato. Meu celular: 47 9 8807-9176. Meu email: vergiliopoleza@gmail.com.
